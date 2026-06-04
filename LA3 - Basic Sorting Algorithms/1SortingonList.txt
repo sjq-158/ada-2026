@@ -1,0 +1,14 @@
+Sorting on Lists
+Implement the three basic sorting algorithms - Bubble Sort, Selection Sort, and Insertion Sort - in a generic List.
+To make this possible, you will have to implement the swap method in addition to the add, get, and size method that you will also implement.
+
+The swap(int pos1, int pos2) method will accept two positions that will swap their position in the list. Note of the following implementation:
+
+For ArrayList, you can directly swap them.
+For LinkedList, to maintain integrity of data in the structure, you are not to swap directly the element, nor remove a node. Instead, you are to only change the nodes' next pointers.
+ 
+As for the output, when you swap the elements of different positions, print the array using the print() method. Do this in the functions in main file and not on the swap implementation in the header files.
+
+On a one-whole sheet of paper, write the exact best-case and worst-case running time of the three sorting algorithms. Show your solutions by writing the same sorting code on paper with the annotations and solutions and summarize in the table with the final answer like below.
+
+Note: Do not include the print() method in the counting as it is not integral for sorting. Other method calls shall be counted based on the subclass's implementation of get(), size(), and swap() methods.

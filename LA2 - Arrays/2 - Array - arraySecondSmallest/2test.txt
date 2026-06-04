@@ -1,0 +1,27 @@
+Sample Output 1
+Enter number of elements: 5
+Enter element 1: 9
+Enter element 2: 7
+Enter element 3: 6
+Enter element 4: 4
+Enter element 5: 2
+The second smallest element is 4
+
+Sample Output 2
+Enter number of elements: 9
+Enter element 1: 45
+Enter element 2: 23
+Enter element 3: 48
+Enter element 4: 65
+Enter element 5: 12
+Enter element 6: 26
+Enter element 7: 98
+Enter element 8: 20
+Enter element 9: 15
+The second smallest element is 15
+
+Sample Output 3
+Enter number of elements: 2
+Enter element 1: 15
+Enter element 2: 10
+The second smallest element is 15

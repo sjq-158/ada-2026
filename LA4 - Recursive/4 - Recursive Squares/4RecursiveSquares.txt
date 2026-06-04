@@ -1,0 +1,2 @@
+Recursive Squares
+Write a function that takes an integer num. Use a recursive function to print the square of numbers from 1 to the inputted number. Each square should be printed on a separate line.

@@ -1,0 +1,5 @@
+Binary Search
+Given the main method that asks for a size and a sorted set of unique numbers, write a function that will search for a given number x.
+This will return the index of that number, and if not found, return -1.
+
+The best time complexity for this problem is O(log n).

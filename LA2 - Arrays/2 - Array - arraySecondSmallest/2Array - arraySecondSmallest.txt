@@ -1,0 +1,13 @@
+Array - arraySecondSmallest
+
+Create the function
+arraySecondSmallest(int* array, int n)
+to return the second smallest element among the elements in the array
+
+Parameters:
+•array – the array itself
+•n – the size of the array
+
+1.This method will iterate the array to get the second smallest element; and
+
+2.Return that element.

@@ -1,0 +1,15 @@
+Array List (Dynamic)
+
+The List ADT has the following operations that you are to implement on a Dynamic Array List:
+
+void insert(int num): Inserts num into the last element of the list.
+int get(int pos): Returns the integer in the _pos_th position. If the position is invalid, throw an exception that has a message "Invalid position".
+int remove(int num): Removes the first occurrence of num from the list and returns the position to which it was found. If the number does not exist, return 0 instead.
+void print(): Prints all the elements of the array, including question marks (?) for the unoccupied allocated spaces for the array.
+void size(): Returns the size of the list.
+bool isEmpty(): Returns true when the list is empty; otherwise false.
+void addAt(int num, int pos): Inserts num as the _pos_th position in the list. If the position is invalid, throw an exception that has a message "Invalid position".
+int removeAt(int pos): Removes the element at the specified position pos. If the position is invalid, throw an exception that has a message "Invalid position".
+ 
+
+Note that when the array is already full, you are to dynamically allocate memory by 50%. Whenever removing elements from the array, check if the remaining size reaches two-thirds of the capacity or lower. When it does, reduce the capacity of the array by 25%. Remember to maintain a minimum capacity of 5.

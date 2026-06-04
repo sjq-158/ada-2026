@@ -1,0 +1,17 @@
+Sample Output 1
+Enter the size of the array: 10
+Enter the sorted list of numbers: 3 7 11 13 15 16 20 26 35 42
+Enter the target value: 23
+Two numbers found.
+
+Sample Output 2
+Enter the size of the array: 10
+Enter the sorted list of numbers: 3 7 11 13 15 16 20 26 35 42
+Enter the target value: 48
+Two numbers found.
+
+Sample Output 3
+Enter the size of the array: 10
+Enter the sorted list of numbers: 3 7 11 13 15 16 20 26 35 42
+Enter the target value: 67
+No two numbers found that sum to the target.

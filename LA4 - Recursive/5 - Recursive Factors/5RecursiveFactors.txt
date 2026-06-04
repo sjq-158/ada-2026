@@ -1,0 +1,2 @@
+Recursive Factors
+Write a function that takes an integer num. Use a recursive function to print all the factors of the entered number, arranged numerically, and return the number of factors. A factor is a number that divides another number without leaving a remainder.

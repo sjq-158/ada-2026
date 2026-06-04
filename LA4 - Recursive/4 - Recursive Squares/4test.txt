@@ -1,0 +1,23 @@
+Sample Output 1
+Enter a number: 10
+1
+4
+9
+16
+25
+36
+49
+64
+81
+100
+
+Sample Output 2
+Enter a number: 4
+1
+4
+9
+16
+
+Sample Output 3
+Enter a number: 1
+1

@@ -1,0 +1,14 @@
+Array - arrayFind
+
+Create the function
+arrayFind(int* array, int num, int n)
+to locate the element in the array
+
+Parameters:
+•array – the array itself
+•num – the number to be located
+•n - the size of the array
+
+1.This method will iterate the array to find the element num, when found, use the break operation; and
+
+2.Return the position of the element starting with 1; if not found, return -1.

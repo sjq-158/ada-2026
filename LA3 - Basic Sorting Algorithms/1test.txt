@@ -1,0 +1,47 @@
+Sample Output 1
+Enter type of list: A
+Enter number of elements: 5
+Enter element 1: 16
+Enter element 2: 20
+Enter element 3: 11
+Enter element 4: 9
+Enter element 5: 8
+Enter sorting method: S
+[16, 20, 11, 9, 8, ?]
+[8, 20, 11, 9, 16, ?]
+[8, 9, 11, 20, 16, ?]
+[8, 9, 11, 16, 20, ?]
+
+Sample Output 2
+Enter type of list: L
+Enter number of elements: 5
+Enter element 1: 16
+Enter element 2: 20
+Enter element 3: 11
+Enter element 4: 9
+Enter element 5: 8
+Enter sorting method: S
+16 -> 20 -> 11 -> 9 -> 8
+8 -> 20 -> 11 -> 9 -> 16
+8 -> 9 -> 11 -> 20 -> 16
+8 -> 9 -> 11 -> 16 -> 20
+
+Sample Output 3
+Enter type of list: A
+Enter number of elements: 5
+Enter element 1: 16
+Enter element 2: 20
+Enter element 3: 11
+Enter element 4: 9
+Enter element 5: 8
+Enter sorting method: I
+[16, 20, 11, 9, 8, ?]
+[16, 11, 20, 9, 8, ?]
+[11, 16, 20, 9, 8, ?]
+[11, 16, 9, 20, 8, ?]
+[11, 9, 16, 20, 8, ?]
+[9, 11, 16, 20, 8, ?]
+[9, 11, 16, 8, 20, ?]
+[9, 11, 8, 16, 20, ?]
+[9, 8, 11, 16, 20, ?]
+[8, 9, 11, 16, 20, ?]

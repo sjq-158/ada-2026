@@ -1,0 +1,14 @@
+Sample Output 1
+Enter size: 5
+Enter elements: 12 62 58 15 61
+The largest element is: 62
+
+Sample Output 2
+Enter size: 2
+Enter elements: 12 13
+The largest element is: 13
+
+Sample Output 3
+Enter size: 9
+Enter elements: 15 95 35 25 20 14 12 65 12
+The largest element is: 95

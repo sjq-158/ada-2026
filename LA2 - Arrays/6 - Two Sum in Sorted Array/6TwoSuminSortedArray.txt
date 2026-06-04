@@ -1,0 +1,5 @@
+Two Sum in Sorted Array
+Already given is a main function that asks for the size of the array, the sorted list of numbers, and a target value.
+Implement a function that takes the array, the size, and the target and find any two numbers in the array whose sum equals the target. This will return an array containing the two numbers. If it is impossible for the sum of any two numbers to be the target, return a null pointer (nullptr) instead. Also note that the same number in the array cannot be used to be the answer; example given the array [1,2,5] and the target is 4, you cannot use 2 twice unless there are two 2's in the array like [1,2,2,5].
+
+Remember to not return a local array variable as this may cause segmentation fault errors. Create an array in the heap instead and return its pointer.
