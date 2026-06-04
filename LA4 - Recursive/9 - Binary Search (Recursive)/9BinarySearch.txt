@@ -1,0 +1,4 @@
+Binary Search - Recursive
+Given the main method that asks for a size and a sorted set of unique numbers, write a function that will search for a given number x.
+
+This time, you will be forced to implement it using a recursive function.

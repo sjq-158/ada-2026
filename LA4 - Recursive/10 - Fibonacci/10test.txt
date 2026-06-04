@@ -1,0 +1,11 @@
+Sample Output 1
+Enter a number: 0
+0
+
+Sample Output 2
+Enter a number: 1
+1
+
+Sample Output 3
+Enter a number: 2
+1

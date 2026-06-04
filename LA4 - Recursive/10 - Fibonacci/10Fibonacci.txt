@@ -1,0 +1,7 @@
+Fibonacci
+The Fibonacci sequence is an infinite series of numbers, typically starting with 0 and 1, where each number is the sum of the two preceding ones 0,1,1,2,3,5,8,13,21,....
+The sequence is defined by the recurrence relation F(n)=F(n-1)+F(n-2), with seed values F(0)=0 and F(1)=1.
+
+Write the recursive function to determine the nth number in the Fibonacci sequence.
+
+<P.Note: This utilizes long long since it accepts large numbers.>

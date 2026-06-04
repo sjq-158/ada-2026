@@ -1,0 +1,8 @@
+Collatz Conjecture
+The Collatz conjecture is one of the well known unsolved problems in mathematics. The conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1. The following are the two arithmetic operations:
+
+If the previous term is even, the next term shall be half of the previous term.
+Otherwise if it is odd, the next term shall be thrice the previous term, plus one.
+ 
+
+Given a number n, create a recursive function that will print the terms of the sequence from n until it gets to 1.

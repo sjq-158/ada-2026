@@ -1,0 +1,4 @@
+Recursive Sum of Digits
+Create a recursive function that returns the sum of the digits of the given number n.
+
+Example: the number 952 shall return 16 as 9 + 5 + 2 equals 16.

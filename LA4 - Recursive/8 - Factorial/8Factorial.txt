@@ -1,0 +1,4 @@
+Factorial
+Write a recursive function that displays the factorial of a given number. A factorial (n!) is the product of a positive integer
+
+and all positive integers below it down to 1 (e.g., 5! is 5*4*3*2*1 = 120).
