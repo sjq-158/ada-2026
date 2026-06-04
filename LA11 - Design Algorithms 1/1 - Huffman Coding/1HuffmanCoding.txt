@@ -1,0 +1,12 @@
+Huffman Coding
+Suppose we have a file that contains only the characters a, e, i, s, t plus blank spaces and newlines: 10 a, 15 e, 12 i, 3 s, 4 t, 13 blanks, and one newline. Only 3 bits are needed to distinguish between the above characters. The file then requires 174 bits to represent.
+Is it possible to provide a better code and reduce the total number of bits required?
+Yes. We can allow the code length to vary from character to character and to ensure that the frequently occurring characters have short codes. If all the characters occur with the same frequency, then there are not likely to be any savings. The binary code that represents the alphabet can be represented by a binary tree.
+
+Assuming that the number of characters is C, Huffman’s algorithm can be described as follows :
+1.At the beginning of the algorithm, there are C single-node trees, one for each character.
+2.The weight of a tree is equal to the sum of the frequencies of its leaves.
+3.C-1 times, select the two trees, T1 and T2, of smallest weight, breaking ties arbitrary, and form a new tree with subtrees T1 and T2.
+4.At the end of the algorithm there is one tree, and this is the optimal Huffman coding tree.
+
+Implement the heap class first, since this will be the main data structure to always get the node with the minimum weight. Note that when combining two nodes, the left child should have the smaller weight than the right node. Also, when bubbling-up, do not swap when it has the same weight with its parent; and when bubbling-down as you remove a node in the heap and when both the parent's children have the same weight that is smaller than the parent, you choose to swap with the left child. Feel free to add private helper methods.

@@ -1,0 +1,11 @@
+0/1 Knapsack
+You are given n items, each with a weight and a value, and a knapsack with a weight capacity W. Your task is to find the maximum value you can achieve without exceeding the weight capacity of the knapsack.
+
+Input:
+The first line contains two integers n (the number of items) and W (the weight capacity of the knapsack).
+The next n lines each contain two integers, representing the value and weight of each item.
+
+Output:
+Print the maximum value that can be achieved without exceeding the weight capacity of the knapsack.
+
+There may be more approaches to solve this problem, however for the sake of this activity, you are expected to use dynamic programming by means of tabulation to answer this problem.

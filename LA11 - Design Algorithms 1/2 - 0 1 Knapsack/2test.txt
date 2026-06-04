@@ -1,0 +1,24 @@
+Sample Output 1
+Enter number of items and weight capacity: 4 50
+Enter value and weight of each item:
+60 10
+100 20
+120 30
+50 40
+Maximum value in Knapsack = 220
+
+Sample Output 2
+Enter number of items and weight capacity: 3 55
+Enter value and weight of each item:
+500 40
+330 30
+225 25
+Maximum value in Knapsack = 555
+
+Sample Output 3
+Enter number of items and weight capacity: 3 60
+Enter value and weight of each item:
+60 10
+100 20
+120 30
+Maximum value in Knapsack = 280

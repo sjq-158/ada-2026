@@ -1,0 +1,60 @@
+Sample Output 1
+Enter 0 for weight to stop.
+Enter char and weight: t 6
+Enter char and weight: r 5
+Enter char and weight: e 4
+Enter char and weight: y 7
+Enter char and weight: q 2
+Enter char and weight: w 3
+Enter char and weight: x 0
+t(6) - 01 = 12 bits
+r(5) - 00 = 10 bits
+e(4) - 110 = 12 bits
+y(7) - 10 = 14 bits
+q(2) - 1110 = 8 bits
+w(3) - 1111 = 12 bits
+File Size = 68 bits
+
+Sample Output 2
+Enter 0 for weight to stop.
+Enter char and weight: a 10
+Enter char and weight: e 15
+Enter char and weight: i 12
+Enter char and weight: s 3
+Enter char and weight: t 4
+Enter char and weight: b 13
+Enter char and weight: n 1
+Enter char and weight: x 0
+a(10) - 111 = 30 bits
+e(15) - 10 = 30 bits
+i(12) - 00 = 24 bits
+s(3) - 11011 = 15 bits
+t(4) - 1100 = 16 bits
+b(13) - 01 = 26 bits
+n(1) - 11010 = 5 bits
+File Size = 146 bits
+
+Sample Output 3
+Enter 0 for weight to stop.
+Enter char and weight: a 8
+Enter char and weight: b 46
+Enter char and weight: c 20
+Enter char and weight: d 46
+Enter char and weight: e 45
+Enter char and weight: f 28
+Enter char and weight: g 49
+Enter char and weight: h 12
+Enter char and weight: i 37
+Enter char and weight: j 21
+Enter char and weight: x 0
+a(8) - 01110 = 40 bits
+b(46) - 101 = 138 bits
+c(20) - 0110 = 80 bits
+d(46) - 110 = 138 bits
+e(45) - 100 = 135 bits
+f(28) - 001 = 84 bits
+g(49) - 111 = 147 bits
+h(12) - 01111 = 60 bits
+i(37) - 010 = 111 bits
+j(21) - 000 = 63 bits
+File Size = 996 bits

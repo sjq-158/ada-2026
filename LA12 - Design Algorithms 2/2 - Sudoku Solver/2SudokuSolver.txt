@@ -1,0 +1,36 @@
+Sudoku Solver
+You are given a 9 × 9 Sudoku puzzle represented as a two‑dimensional grid. Each cell of the grid contains either:
+
+A digit from 1 to 9, representing a pre-filled value, or
+The value 0, representing an empty cell that needs to be solved.
+The goal is to complete the Sudoku puzzle so that it satisfies all standard Sudoku constraints.
+
+Sudoku Rules and Constraints
+A completed Sudoku board must satisfy the following conditions:
+
+Row Constraint
+Each row must contain the numbers 1 through 9 exactly once, with no repetitions.
+Column Constraint
+Each column must contain the numbers 1 through 9 exactly once, with no repetitions.
+Subgrid Constraint
+Each 3 × 3 subgrid must contain the numbers 1 through 9 exactly once, with no repetitions.
+The input puzzle is guaranteed to be a 9 × 9 grid, but it may be partially filled and may or may not have a valid solution.
+
+Task
+Write a program that:
+Reads a 9 × 9 Sudoku board from input.
+Uses a backtracking algorithm to fill in the empty cells.
+If a valid solution exists:
+Output the completed Sudoku board.
+If no valid solution exists:
+Output a message indicating that no solution is possible.
+Solution Approach
+The problem is solved using a backtracking strategy, which works as follows:
+
+Traverse the board to find an empty cell.
+Try placing digits 1 through 9 in that cell.
+For each attempt, check if placing the digit is valid according to Sudoku rules.
+If valid, recursively attempt to solve the rest of the board.
+If a choice leads to an invalid state, undo the placement (backtrack) and try the next digit.
+If all cells are successfully filled, the puzzle is solved.
+This approach systematically explores the solution space and guarantees that a solution will be found if one exists.

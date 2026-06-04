@@ -1,0 +1,34 @@
+Traveling Salesman Problem
+You are given a complete, weighted graph representing a set of cities. The graph is provided as an adjacency matrix, where the value at graph[i][j] denotes the cost of traveling directly from city i to city j.
+
+In the testcase 1, the graph above is the reference, and so the adjacency matrix is as below:
+
+[[0 10 15 20],
+[10 0 35 25],
+[15 35 0 30],
+[20 25 30 0]]
+
+The objective is to determine the minimum total travel cost for a salesman who:
+
+Starts at a designated city (city 0),
+Visits each city exactly once, and
+Returns to the starting city.
+Constraints and Assumptions
+The adjacency matrix is of size N × N.
+graph[i][i] = 0, since there is no cost to travel from a city to itself.
+All paths between distinct cities have non-negative travel costs.
+The graph is assumed to be fully connected, ensuring that a complete tour is possible.
+Solution Approach: Branch and Bound
+To efficiently solve the Traveling Salesman Problem, a Branch and Bound strategy is used. This technique systematically explores possible tours while eliminating (pruning) branches that cannot produce a better solution than the best one found so far.
+
+Key Concepts Used:
+Branching:
+At each step, the algorithm tries extending the current partial tour by visiting an unvisited city.
+Bounding:
+A lower bound estimate of the minimum possible total tour cost is computed for each partial tour. This bound is obtained by adding:
+The cost accumulated so far, and
+The minimum outgoing edge cost for each unvisited city.
+Pruning:
+If the lower bound of a partial tour is greater than or equal to the current best known solution, that branch is discarded, as it cannot yield a better result.
+Expected Output
+The algorithm outputs the minimum cost required to complete a round trip that starts and ends at city 0 while visiting all other cities exactly once.

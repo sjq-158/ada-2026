@@ -1,0 +1,26 @@
+Sample Output 1
+Enter number of cities: 4
+Enter adjacency matrix:
+0 10 15 20
+10 0 35 25
+15 35 0 30
+20 25 30 0
+Minimum cost: 80
+
+Sample Output 2
+Enter number of cities: 3
+Enter adjacency matrix:
+0 10 15
+10 0 20
+15 20 0
+Minimum cost: 45
+
+Sample Output 3
+Enter number of cities: 5
+Enter adjacency matrix:
+0 14 9 8 7
+14 0 10 12 15
+9 10 0 11 13
+8 12 11 0 6
+7 15 13 6 0
+Minimum cost: 44
