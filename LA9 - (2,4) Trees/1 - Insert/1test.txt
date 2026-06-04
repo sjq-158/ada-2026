@@ -1,0 +1,53 @@
+Sample Output 1
+Operation: i 6
+Operation: i 8
+Operation: i 1
+Operation: p
+Root: 1 6 8
+Operation: i 5
+Operation: p
+Root: 6
+Child 1 of Root: 1 5
+Child 2 of Root: 8
+Operation: x
+Exiting
+
+Sample Output 2
+Operation: i 6
+Operation: i 8
+Operation: i 1
+Operation: i 5
+Operation: p
+Root: 6
+Child 1 of Root: 1 5
+Child 2 of Root: 8
+Operation: i 7
+Operation: i 9
+Operation: i 2
+Operation: p
+Root: 6
+Child 1 of Root: 1 2 5
+Child 2 of Root: 7 8 9
+Operation: x
+Exiting
+
+Sample Output 3
+Operation: i 6
+Operation: i 8
+Operation: i 1
+Operation: i 5
+Operation: i 7
+Operation: i 9
+Operation: i 2
+Operation: p
+Root: 6
+Child 1 of Root: 1 2 5
+Child 2 of Root: 7 8 9
+Operation: i 4
+Operation: p
+Root: 4 6
+Child 1 of Root: 1 2
+Child 2 of Root: 5
+Child 3 of Root: 7 8 9
+Operation: x
+Exiting

@@ -1,0 +1,37 @@
+(2, 4) Tree - Insertion
+A (2,4) Tree is a particular example of a more general structure known as a multiway search tree, in which internal nodes may have more than two children.
+
+We define a multiway search tree to be an ordered tree T that has the following properties:
+•Each internal node of T has at least two children. That is, each internal node is a d-node such that d≥2.
+•Each internal d-node w of T with children c1,...,cd stores an ordered set of d −1 key-value pairs (k1,v1), ... , (kd−1,vd−1), where k1 ≤ ··· ≤ kd−1.
+•Let us conventionally define k0 = −∞ and kd = +∞. For each entry (k,v) stored at a node in the subtree of w rooted at ci, i = 1,...,d, we have that ki−1 ≤ k ≤ ki.
+
+We perform such a search by tracing a path in T starting at the root.
+•When we are at a d-node w during this search, we compare the key k with the keys k1,...,kd−1 stored at w.
+•If k = kifor some i, the search is successfully completed. Otherwise, we continue the search in the child ci of w such that ki−1 < k < k i</sub>. (Recall that we conventionally define k0=−∞ and kd=+∞.)
+•If we reach an external node, then we know that there is no entry with key k in T, and the search terminates unsuccessfully.
+
+Additionally, a (2,4) Tree has the following properties:
+•Size Property: Every internal node has at most four children.
+•Depth Property: All the external nodes have the same depth.
+
+
+To perform insertion, the first perform a search for k. Assuming that T has no entry with key k, this search terminates unsuccessfully at an external node z (null).
+•Let w be the parent of z. We insert the new entry into node w and add a new child y (an external node) to w on the left of z.
+•Our insertion method preserves the depth property, since we add a new external node at the same level as existing external nodes. Nevertheless, it may violate the size property.
+•Indeed, if a node w was previously a 4-node, then it would become a 5-node after the insertion, which causes the tree T to no longer be a (2,4) tree. This type of violation of the size property is called an overflow at node w, and it must be resolved in order to restore the properties of a (2,4) tree.
+
+Let c1,...,c5 be the children of w, and let k1,...,k4 be the keys stored at w. To remedy the overflow at node w, we perform a split operation on w as follows:
+Replace w with two nodes w′ and w′′, where
+w′ is a 3-node with children c1,c2,c3 storing keys k1 and k2.
+w′′ is a 2-node with children c4,c5 storing key k4.
+If w is the root of T, create a new root node u; else, let u be the parent of w.
+Insert key k3 into u and make w′ and w′′ children of u, so that if w was child i of u, then w′ and w′′ become children i and i+1 of u, respectively.
+
+In the node struct, here are the following fields:
+parent node pointer;
+keys, an array of 4 integers, which will only be completely filled on an overflow to be addressed immediately;
+children, an array of node pointers to be performed malloc/calloc upon creation of the node.
+size, the number of keys in the node (the number of children is expectedly size+1).
+
+Feel free to add helper functions in the class or in the struct.

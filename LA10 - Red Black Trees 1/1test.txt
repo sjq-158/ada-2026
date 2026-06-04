@@ -1,0 +1,95 @@
+Sample Output 1
+Operation: i 9
+Operation: i 14
+Operation: i 20
+INSERTION Violation: Case 1
+ZIGLEFT
+Operation: p
+PRE-ORDER: 14(B) 9(R) 20(R)
+IN-ORDER: 9(R) 14(B) 20(R)
+POST-ORDER: 9(R) 20(R) 14(B)
+STATUS: 1
+Operation: i 11
+INSERTION Violation: Case 2
+Operation: p
+PRE-ORDER: 14(B) 9(B) 11(R) 20(B)
+IN-ORDER: 9(B) 11(R) 14(B) 20(B)
+POST-ORDER: 11(R) 9(B) 20(B) 14(B)
+STATUS: 1
+Operation: i 13
+INSERTION Violation: Case 1
+ZIGLEFT
+Operation: p
+PRE-ORDER: 14(B) 11(B) 9(R) 13(R) 20(B)
+IN-ORDER: 9(R) 11(B) 13(R) 14(B) 20(B)
+POST-ORDER: 9(R) 13(R) 11(B) 20(B) 14(B)
+STATUS: 1
+Operation: i 4
+INSERTION Violation: Case 2
+Operation: p
+PRE-ORDER: 14(B) 11(R) 9(B) 4(R) 13(B) 20(B)
+IN-ORDER: 4(R) 9(B) 11(R) 13(B) 14(B) 20(B)
+POST-ORDER: 4(R) 9(B) 13(B) 11(R) 20(B) 14(B)
+STATUS: 1
+Operation: i 7
+INSERTION Violation: Case 1
+ZIGZAGRIGHT
+Operation: p
+PRE-ORDER: 14(B) 11(R) 7(B) 4(R) 9(R) 13(B) 20(B)
+IN-ORDER: 4(R) 7(B) 9(R) 11(R) 13(B) 14(B) 20(B)
+POST-ORDER: 4(R) 9(R) 7(B) 13(B) 11(R) 20(B) 14(B)
+STATUS: 1
+Operation: x
+Exiting
+
+Sample Output 2
+Operation: i 9
+Operation: i 14
+Operation: i 20
+INSERTION Violation: Case 1
+ZIGLEFT
+Operation: i 11
+INSERTION Violation: Case 2
+Operation: i 13
+INSERTION Violation: Case 1
+ZIGLEFT
+Operation: i 4
+INSERTION Violation: Case 2
+Operation: i 7
+INSERTION Violation: Case 1
+ZIGZAGRIGHT
+Operation: p
+PRE-ORDER: 14(B) 11(R) 7(B) 4(R) 9(R) 13(B) 20(B)
+IN-ORDER: 4(R) 7(B) 9(R) 11(R) 13(B) 14(B) 20(B)
+POST-ORDER: 4(R) 9(R) 7(B) 13(B) 11(R) 20(B) 14(B)
+STATUS: 1
+Operation: i 1
+INSERTION Violation: Case 2
+INSERTION Violation: Case 1
+ZIGRIGHT
+Operation: p
+PRE-ORDER: 11(B) 7(R) 4(B) 1(R) 9(B) 14(R) 13(B) 20(B)
+IN-ORDER: 1(R) 4(B) 7(R) 9(B) 11(B) 13(B) 14(R) 20(B)
+POST-ORDER: 1(R) 4(B) 9(B) 7(R) 13(B) 20(B) 14(R) 11(B)
+STATUS: 1
+Operation: x
+Exiting
+
+Sample Output 3
+Operation: i 24
+Operation: i 37
+Operation: i 13
+Operation: p
+PRE-ORDER: 24(B) 13(R) 37(R)
+IN-ORDER: 13(R) 24(B) 37(R)
+POST-ORDER: 13(R) 37(R) 24(B)
+STATUS: 1
+Operation: i 29
+INSERTION Violation: Case 2
+Operation: p
+PRE-ORDER: 24(B) 13(B) 37(B) 29(R)
+IN-ORDER: 13(B) 24(B) 29(R) 37(B)
+POST-ORDER: 13(B) 29(R) 37(B) 24(B)
+STATUS: 1
+Operation: x
+Exiting

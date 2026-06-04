@@ -1,0 +1,55 @@
+Sample Output 1
+Enter capacity of hash table: 9
+Operation: i 43
+0
+Operation: i 39
+0
+Operation: i 47
+0
+Operation: i 94
+0
+Operation: p
+0	1	2	3	4	5	6	7	8
+43	0	47	39	0	94	0	0	0
+Operation: x
+Exiting
+
+Sample Output 2
+Enter capacity of hash table: 11
+Operation: i 47
+0
+Operation: i 51
+0
+Operation: i 53
+0
+Operation: i 50
+0
+Operation: i 18
+0
+Operation: p
+0	1	2	3	4	5	6	7	8	9	10
+0	0	53	47	50	0	18	0	51	0	0
+Operation: x
+Exiting
+
+Sample Output 3
+Enter capacity of hash table: 7
+Operation: i 43
+0
+Operation: i 98
+0
+Operation: i 81
+0
+Operation: i 52
+0
+Operation: i 12
+0
+Operation: i 19
+0
+Operation: i 21
+0
+Operation: p
+0	1	2	3	4	5	6
+21	19	43	52	98	81	12
+Operation: x
+Exiting

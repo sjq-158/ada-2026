@@ -1,0 +1,20 @@
+Hash Table - Separate Chaining
+Your task is to implement the core operations of a hash function using separate chaining involving strings. Your secondary container is a linked list.
+
+For the string's hash code, use the Polynomial Hash Code using a=5. For the compression function, you will implement the Division Method.
+
+The fields of a Hash Table implementing Separate Chaining are the following. You may add more.
+table - the hash table itself, which is an array of linked list references.
+N - the capacity of the hash table
+
+The methods of the HashTable are present in the base class. Make sure to use the hash function in the core operations and start doing the operations as discussed in the topic. Here are the following given methods:
+int hashfn(int key) - This is the entire hash function that calls on its two portions defined above. This is already implemented. ONLY USE THIS when getting a hash value of a key. This function is already defined in the base class; to use this function, use this->hashfn(key).
+
+FOR THIS ACTIVITY, implement the following:
+HTSepChain(int N) - a constructor. Here you are tasked to allocate memory to the hash table and perform the initialization of the fields.
+int hash_code(string key) - This function returns the hash code of a key. This is already implemented to return its input key since the key is by itself an integer. DO NOT use this function in the core operations.
+int compress(int code) - This is the compression function that will return a serviceable index to the hash table given a hash code. Your task is to implement this using the MAD technique as specified above. DO NOT use this function in the core operations.
+int insert(string key) - This function will attempt to insert the key in the hash table. If the key already exists in the hash table, throw an exception with the appropriate message "Already added key [key]". Otherwise, return the number of items in the same bucket.
+int search(string key)- This function will return a non-negative value if the key exists in the hash table. It will return -1 if the said key is not in the hash table. Otherwise, it will return the number of items in that same bucket.
+int remove(string key) - This function removes the key from the table. It will return -1 if the said key is not in the hash table. Otherwise, it will return the number of items left in that bucket.
+void print() - This function will print the linked list along with all its elements from index 0 to N-1, separated by tabs.

@@ -1,0 +1,164 @@
+Sample Output 1
+Op: i 53
+Op: i 30
+Op: i 80
+Op: i 75
+Op: i 70
+ZIGRIGHT
+Op: p
+Size: 5
++--R: 53
+|   +--L: 30
+|   +--R: 75
+|   |   +--L: 70
+|   |   +--R: 80
+Status: 1
+Op: i 60
+ZIGZAGLEFT
+Op: p
+Size: 6
++--R: 70
+|   +--L: 53
+|   |   +--L: 30
+|   |   +--R: 60
+|   +--R: 75
+|   |   +--R: 80
+Status: 1
+Op: i 55
+Op: p
+Size: 7
++--R: 70
+|   +--L: 53
+|   |   +--L: 30
+|   |   +--R: 60
+|   |   |   +--L: 55
+|   +--R: 75
+|   |   +--R: 80
+Status: 1
+Op: r 30
+ZIGZAGLEFT
+Op: p
+Size: 6
++--R: 70
+|   +--L: 55
+|   |   +--L: 53
+|   |   +--R: 60
+|   +--R: 75
+|   |   +--R: 80
+Status: 1
+Op: r 53
+Op: r 55
+Op: r 60
+ZIGLEFT
+Op: p
+Size: 3
++--R: 75
+|   +--L: 70
+|   +--R: 80
+Status: 1
+Op: x
+Exiting
+
+Sample Output 2
+Op: i 30
+Op: i 90
+Op: i 57
+ZIGZAGLEFT
+Op: p
+Size: 3
++--R: 57
+|   +--L: 30
+|   +--R: 90
+Status: 1
+Op: i 20
+Op: i 27
+ZIGZAGRIGHT
+Op: p
+Size: 5
++--R: 57
+|   +--L: 27
+|   |   +--L: 20
+|   |   +--R: 30
+|   +--R: 90
+Status: 1
+Op: i 50
+ZIGZAGRIGHT
+Op: i 41
+Op: i 86
+Op: i 59
+ZIGRIGHT
+Op: p
+Size: 9
++--R: 30
+|   +--L: 27
+|   |   +--L: 20
+|   +--R: 57
+|   |   +--L: 50
+|   |   |   +--L: 41
+|   |   +--R: 86
+|   |   |   +--L: 59
+|   |   |   +--R: 90
+Status: 1
+Op: i 25
+ZIGZAGRIGHT
+Op: p
+Size: 10
++--R: 30
+|   +--L: 25
+|   |   +--L: 20
+|   |   +--R: 27
+|   +--R: 57
+|   |   +--L: 50
+|   |   |   +--L: 41
+|   |   +--R: 86
+|   |   |   +--L: 59
+|   |   |   +--R: 90
+Status: 1
+Op: i 17
+Op: i 19
+ZIGZAGRIGHT
+Op: p
+Size: 12
++--R: 30
+|   +--L: 25
+|   |   +--L: 19
+|   |   |   +--L: 17
+|   |   |   +--R: 20
+|   |   +--R: 27
+|   +--R: 57
+|   |   +--L: 50
+|   |   |   +--L: 41
+|   |   +--R: 86
+|   |   |   +--L: 59
+|   |   |   +--R: 90
+Status: 1
+Op: x
+Exiting
+
+Sample Output 3
+Op: i 57
+Op: i 26
+Op: i 18
+ZIGRIGHT
+Op: i 98
+Op: i 84
+ZIGZAGLEFT
+Op: p
+Size: 5
++--R: 26
+|   +--L: 18
+|   +--R: 84
+|   |   +--L: 57
+|   |   +--R: 98
+Status: 1
+Op: r 18
+ZIGLEFT
+Op: p
+Size: 4
++--R: 84
+|   +--L: 26
+|   |   +--R: 57
+|   +--R: 98
+Status: 1
+Op: x
+Exiting

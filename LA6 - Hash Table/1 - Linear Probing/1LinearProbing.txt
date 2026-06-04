@@ -1,0 +1,31 @@
+Hash Table - Linear Probing 1
+Your task is to implement the core operations of a hash function using linear probing involving generic keys of type K. For this problem that only uses positive integers, you don't have to worry about converting their hash codes anymore as they are already integers, so you may return their values as is. Since there will be no negative keys in this problem, you can utilize negative numbers for your own purposes.
+
+For the compression function, you will implement the Multiply-Add-and-Divide (MAD) technique given that a=59, b=17, and c=509. These are large numbers, but it will be easier to compute since a computer will do it.
+
+The fields of a Hash Table implementing Linear Probing are the following. You may add more.
+table - the hash table itself
+N - the capacity of the hash table
+count - the number of elements currently occupying the hash table
+
+The methods of the HashTable are present in the base class. Make sure to use the hash function in the core operations and start doing the operations as discussed in the topic. Here are the following given methods:
+int hashfn(int key) - This is the entire hash function that calls on its two portions defined above. This is already implemented. ONLY USE THIS when getting a hash value of a key. This function is already defined in the base class; to use this function, use this->hashfn(key).
+ 
+
+FOR THIS ACTIVITY, implement the following:
+HashTable<K>(int N) - a constructor. Here you are tasked to allocate memory to the hash table and perform the initialization of the fields.
+int hash_code(K key) - This function returns the hash code of a key. This is already implemented to return its input key since the key is by itself an integer. DO NOT use this function in the core operations.
+int compress(int code) - This is the compression function that will return a serviceable index to the hash table given a hash code. Your task is to implement this using the MAD technique as specified above. DO NOT use this function in the core operations.
+int insert(K key) - This function will attempt to insert the key in the hash table. If the key already exists in the hash table or if the hash table is already full, throw an exception with the appropriate message "Already added key [key]" or "Table already full". Otherwise, return the number of collisions it had to deal with before successfully inserting the key.
+int search(K key)- This function will return a non-negative value if the key exists in the hash table. It will return -1 if the said key is not in the hash table. Otherwise, it will return the number of cells it had to check and failed before reaching the key (not including the cell when it has found it).
+int remove(K key) - This function removes the key from the table. It will return -1 if the said key is not in the hash table. Otherwise, it will return the number of cells it had to check and failed before reaching the key (not including the cell when it has found it). This will turn the cell to a sentinel, or when there are no succeeding elements, will reset this and the preceding cells to 0.
+void print() - This function will print first the indices of the hash table starting from 0 to N-1, separated by tabs. On a new line, print the actual elements of the hash table, also separated by tabs. If a cell is not occupied or is a sentinel, print 0.
+ 
+
+Inputs
+1. Size of hash table
+This is also known as the variable N
+9
+
+2. Operations
+The series of operations. i for insert, d for remove, s for search, p for print, x for exit

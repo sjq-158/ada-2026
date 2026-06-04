@@ -1,0 +1,53 @@
+Sample Output 1
+Operation: i 51
+Operation: i 27
+Operation: i 92
+Operation: i 13
+Operation: p
+Root: 51
+Child 1 of Root: 13 27
+Child 2 of Root: 92
+Operation: r 27
+Removed 27
+Operation: p
+Root: 51
+Child 1 of Root: 13
+Child 2 of Root: 92
+Operation: x
+Exiting
+
+Sample Output 2
+Operation: i 51
+Operation: i 27
+Operation: i 92
+Operation: i 13
+Operation: p
+Root: 51
+Child 1 of Root: 13 27
+Child 2 of Root: 92
+Operation: r 92
+Removed 92
+Operation: p
+Root: 27
+Child 1 of Root: 13
+Child 2 of Root: 51
+Operation: x
+Exiting
+
+Sample Output 3
+Operation: i 51
+Operation: i 27
+Operation: i 92
+Operation: i 13
+Operation: p
+Root: 51
+Child 1 of Root: 13 27
+Child 2 of Root: 92
+Operation: r 51
+Removed 51
+Operation: p
+Root: 27
+Child 1 of Root: 13
+Child 2 of Root: 92
+Operation: x
+Exiting

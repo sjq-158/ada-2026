@@ -1,0 +1,36 @@
+Red-Black Trees - Insertion
+A Red-Black Tree is a binary search tree with nodes colored red and black in a way that satisfies the following properties:
+
+Root Property: The root is black.
+External Property: Every external node is black.
+Red Property: The children of a red node are black.
+Depth Property: All external nodes have the same black depth, defined as the number of proper ancestors that are black.
+
+Since the nodes have a color, a boolean field is_red is used to determine the color of the node. Intuitively, if is_red is true, then the node is red; otherwise the node is black.
+Your task is to implement the insertion of elements into the Red-Black Tree. It should adhere to the above rules. Here are the steps of inserting into the Red-Black Tree as discussed in class:
+
+Do the usual insertion in a binary search tree.
+If this is the first entry in T, and thus x is the root, we color it black. In all other cases, we color x red.
+Insertion is done at the lowest internal level, therefore preserving the root and depth properties, but may violate the red property. If x is not the root of T and its parent y is red, then we have a parent and a child (namely, y and x) that are both red.
+Note that by the root property, y cannot be the root of T, and by the red property (which was previously satisfied), the parent z of y must be black. Since x and its parent are red, but x’s grandparent z is black, we call this violation of the red property a double red at node x.
+To remedy a double red, we consider two cases:
+
+(1) The Sibling s of y is Black.
+•In this case, the double red denotes the fact that we have added the new node to a corresponding 3-node of the (2,4) tree T′ , effectively creating a malformed 4-node.
+•To fix this problem, we perform a trinode restructuring of T.
+•The trinode restructuring is done by the operation restructure(x)
+•After performing the restructure(x) operation, we color b black and we color a and c red.
+•Therefore, the black depth of the tree is unaffected.
+
+(2) The Sibling s of y is Red.
+•In this case, the double red denotes an overflow in the corresponding (2,4) tree T′.
+•To fix the problem, we perform the equivalent of a split operation. Namely, we do a recoloring: we color y and s black and their parent z red (unless z is the root, in which case, it remains black)
+•However, it is possible that the double-red problem reappears after such a recoloring, albeit higher up in the tree T, since z may have a red parent.
+•If the double-red problem reappears at z, then we repeat the consideration of the two cases at z.
+•Thus, a recoloring either eliminates the double-red problem at node x, or propagates it to the grandparent z of x.
+
+You can copy the codes made in the AVL Tree activity. The changes here is the restructure method where instead of having the grandparent gp as the given node in the argument, we utilize the child x, similar to a splay tree. You will instead identify the parent and grandparent of x. Still output the resulting operation, whether zigleft, zigright, zigzagleft, or zigzagright. After doing the operation, return the parent node (or b) of the resulting operation since that node, along with its children, will be used for recoloring.
+
+Also, print "INSERTION Violation: Case 1" when the first case as mentioned above is detected. Since this will involve restructure, it will then print the resulting trinode restructuring operation in the above paragraph. Print "INSERTION Violation: Case 2" when the second case as mentioned above is detected. This will only recolor the nodes however it may propagate the double-red problem to the above level, and print the appropriate violation when there exists.
+
+What's new is the already implemented print method where it will also print out the color of the node beside the element. It will print "(R)" if the node is red, otherwise "(B)".

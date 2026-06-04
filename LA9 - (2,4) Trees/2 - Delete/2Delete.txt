@@ -1,0 +1,13 @@
+(2, 4) Tree - Deletion
+Perform a search in T for an entry with key k. Removing an entry from a (2,4) tree can always be reduced to the case where the entry to be removed is stored at a node w whose children are external nodes. In such case, we simply remove the key and one of its external nodes.
+
+Suppose, for instance, that the entry with key k that we wish to remove is stored in the ith entry (ki,vi) at a node z that has internal children. In deleting an entry in an internal node, we swap the entry (ki, vi) with an appropriate entry that is stored at a node w with external children as follows:
+We find the leftmost internal node w in the subtree rooted at the (i+1)th child of z, noting that the children of node w are all external nodes.
+We swap the entry (ki, vi) at z with the first entry of w.
+We remove the entry from w and remove the external node that is the ith child of w.
+
+Removing an entry (and a child) from a node w as described above preserves the depth property, for we always remove an external child from a node w with only external children. However, in removing such an external node, we may violate the size property at w. Indeed, if w was previously a 2-node, then it becomes a 1-node with no entries after the removal which is not allowed in a (2,4) tree. This type of violation of the size property is called an underflow at node w. To remedy an underflow, we check whether an immediate sibling of w is a 3-node or a 4-node.
+If we find such a sibling s, then we perform a transfer operation, in which we move a child of s to w: a key of s to the parent u ofw and s, and a key of u to w. Note that if one of the siblings is a 4-node, we choose such sibling for the transfer operation. If both nodes are of the same size, choose the sibling at its right for the operation.
+If both immediate siblings of w are 2-nodes, then we perform a fusion operation, in which we merge w with a sibling, creating a new node w′, and move a key from the parent u of w to w′. If this node has two immediate siblings, choose the sibling at its right for the fusion operation.
+
+The insert method has already been implemented. Your task is to implement the bool remove(int num) method that returns true if the num is successfully removed, otherwise when the num does not exist, return false and don't remove anything.
