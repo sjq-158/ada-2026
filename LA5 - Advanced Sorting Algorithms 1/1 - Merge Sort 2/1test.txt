@@ -1,0 +1,98 @@
+Sample Output 1
+Input length: 6
+Enter element 1: 6
+Enter element 2: 5
+Enter element 3: 4
+Enter element 4: 3
+Enter element 5: 2
+Enter element 6: 1
+6 -> 5 -> 4 -> 3 -> 2 -> 1
+My first list: 6 -> 5 -> 4
+My first list: 6 -> 5
+My first list: 6
+My second list: 5
+SORTED: 5 -> 6
+My second list: 4
+SORTED: 4 -> 5 -> 6
+My second list: 3 -> 2 -> 1
+My first list: 3 -> 2
+My first list: 3
+My second list: 2
+SORTED: 2 -> 3
+My second list: 1
+SORTED: 1 -> 2 -> 3
+SORTED: 1 -> 2 -> 3 -> 4 -> 5 -> 6
+
+Sample Output 2
+Input length: 10
+Enter element 1: 4
+Enter element 2: 9
+Enter element 3: 1
+Enter element 4: 0
+Enter element 5: 6
+Enter element 6: 8
+Enter element 7: 2
+Enter element 8: 3
+Enter element 9: 4
+Enter element 10: 7
+4 -> 9 -> 1 -> 0 -> 6 -> 8 -> 2 -> 3 -> 4 -> 7
+My first list: 4 -> 9 -> 1 -> 0 -> 6
+My first list: 4 -> 9 -> 1
+My first list: 4 -> 9
+My first list: 4
+My second list: 9
+SORTED: 4 -> 9
+My second list: 1
+SORTED: 1 -> 4 -> 9
+My second list: 0 -> 6
+My first list: 0
+My second list: 6
+SORTED: 0 -> 6
+SORTED: 0 -> 1 -> 4 -> 6 -> 9
+My second list: 8 -> 2 -> 3 -> 4 -> 7
+My first list: 8 -> 2 -> 3
+My first list: 8 -> 2
+My first list: 8
+My second list: 2
+SORTED: 2 -> 8
+My second list: 3
+SORTED: 2 -> 3 -> 8
+My second list: 4 -> 7
+My first list: 4
+My second list: 7
+SORTED: 4 -> 7
+SORTED: 2 -> 3 -> 4 -> 7 -> 8
+SORTED: 0 -> 1 -> 2 -> 3 -> 4 -> 4 -> 6 -> 7 -> 8 -> 9
+
+Sample Output 3
+Input length: 8
+Enter element 1: 1
+Enter element 2: 2
+Enter element 3: 3
+Enter element 4: 4
+Enter element 5: 5
+Enter element 6: 6
+Enter element 7: 7
+Enter element 8: 8
+1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
+My first list: 1 -> 2 -> 3 -> 4
+My first list: 1 -> 2
+My first list: 1
+My second list: 2
+SORTED: 1 -> 2
+My second list: 3 -> 4
+My first list: 3
+My second list: 4
+SORTED: 3 -> 4
+SORTED: 1 -> 2 -> 3 -> 4
+My second list: 5 -> 6 -> 7 -> 8
+My first list: 5 -> 6
+My first list: 5
+My second list: 6
+SORTED: 5 -> 6
+My second list: 7 -> 8
+My first list: 7
+My second list: 8
+SORTED: 7 -> 8
+SORTED: 5 -> 6 -> 7 -> 8
+SORTED: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8

@@ -1,0 +1,72 @@
+Sample Output 1
+Enter number of elements: 5
+Enter element 1: 4
+Enter element 2: 8
+Enter element 3: 1
+Enter element 4: 9
+Enter element 5: 2
+Start: 0 | End: 4
+[4, 8, 1, 9, 2]
+[4, 1, 8, 9, 2]
+[4, 1, 2, 9, 8]
+[2, 1, 4, 9, 8]
+Left Partition of 4
+Start: 0 | End: 1
+[2, 1, 4, 9, 8]
+[1, 2, 4, 9, 8]
+Right Partition of 4
+Start: 3 | End: 4
+[1, 2, 4, 9, 8]
+[1, 2, 4, 8, 9]
+Finish: [1, 2, 4, 8, 9]
+
+Sample Output 2
+Enter number of elements: 5
+Enter element 1: 7
+Enter element 2: 2
+Enter element 3: 4
+Enter element 4: 9
+Enter element 5: 1
+Start: 0 | End: 4
+[7, 2, 4, 9, 1]
+[7, 2, 4, 1, 9]
+[1, 2, 4, 7, 9]
+Left Partition of 7
+Start: 0 | End: 2
+[1, 2, 4, 7, 9]
+Right Partition of 1
+Start: 1 | End: 2
+[1, 2, 4, 7, 9]
+Finish: [1, 2, 4, 7, 9]
+
+Sample Output 3
+Enter number of elements: 8
+Enter element 1: 2
+Enter element 2: 4
+Enter element 3: 6
+Enter element 4: 8
+Enter element 5: 10
+Enter element 6: 12
+Enter element 7: 14
+Enter element 8: 16
+Start: 0 | End: 7
+[2, 4, 6, 8, 10, 12, 14, 16]
+Right Partition of 2
+Start: 1 | End: 7
+[2, 4, 6, 8, 10, 12, 14, 16]
+Right Partition of 4
+Start: 2 | End: 7
+[2, 4, 6, 8, 10, 12, 14, 16]
+Right Partition of 6
+Start: 3 | End: 7
+[2, 4, 6, 8, 10, 12, 14, 16]
+Right Partition of 8
+Start: 4 | End: 7
+[2, 4, 6, 8, 10, 12, 14, 16]
+Right Partition of 10
+Start: 5 | End: 7
+[2, 4, 6, 8, 10, 12, 14, 16]
+Right Partition of 12
+Start: 6 | End: 7
+[2, 4, 6, 8, 10, 12, 14, 16]
+Finish: [2, 4, 6, 8, 10, 12, 14, 16]

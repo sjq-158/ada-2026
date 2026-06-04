@@ -1,0 +1,9 @@
+Merge Sort 2
+Given a linked list, implement the merge sort.
+
+The steps of the merge sort are as follows:
+DIVIDE the given linked list equally into two. In the cases that the size is odd, the first list shall contain one more than the second. To divide the list into two, simply generate 2 other instances of linked lists and move the first half elements to the first linked list and make sure to set its head (to the list's original head), tail (to the node at the half of the original list), and size (to half of the original size) properly. Also make sure to set the tail's next to NULL. On the other hand, move the other half to the second linked list and set the head (to the node after the half of the original list), the tail (to the list's original tail) and the size (to half of the original size) properly as well. Note: Do not add or create more nodes! Simply move these nodes. You can reassign the head, tail, and index (or size) of the linked lists since they are public elements.
+RECURSIVELY CALL mergeSort to each of the two newly created linked lists. These methods will return the sorted version of the list to be implemented in Step 3. This has already been provided for you.
+COMBINE and sort the two linked lists that were returned from Step 2. To sort these, initialize a new linked list. Between the first elements of the two linked lists, move the node with the least element to the new linked list. Do this until both the original linked lists are empty. Lastly, return the newly created linked list. Once again, do not add or create more nodes! Simply move these nodes.
+
+<P.Note: This activity doesn't create a new list, just use the existing list to sort the elements>
